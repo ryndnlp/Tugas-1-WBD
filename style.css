@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+#landing{
+    display: flex;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+}
+.landing-section{
+    width: 50%;
+    position: relative;
+}
+#profile-pict{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#left-landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+#name{
+    display: block;
+    font-size: 5rem;
+    color: teal;
+    text-shadow: none;
+}
+#left-landing > h2{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px teal;
+}
+#cursor, #type-animation{
+    display: inline-block;
+}
+#cursor{
+    margin-left: -5px;
+}
+#type-animation{
+    text-align: left;
+}
+#type-animation-wrapper{
+    margin-top: 0.5rem;
+    width: 70%;
+    margin-left: 10px;
+}
+#left-landing > *{
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#right-landing{
+    background-size: cover;
+    background-position: center center;
+}
+.section{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    padding: 2rem 10rem;
+}
+.section > h1{
+    text-align: center;
+    color: teal;
+    border-bottom: 3px solid turquoise;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+.duration{
+    font-weight: 300;
+    display: block;
+}
+.content{
+    padding: 1rem 0;
+    width: 70%;
+}
+.content-item{
+    padding: 0.5rem 0;
+}
+.content-item-body{
+    margin-top: 0.5rem;
+}
+.content-item:first-child{
+    padding-top: 0;
+}
+#experiences{
+    text-align: left;
+}
+.content-item-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-button-group{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.chevron-left, .chevron-right{
+    width: 5rem;
+    color: teal;
+}
+button{
+    background: none;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+button .disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.content p{
+    font-size: 1.2rem;
+}
+footer {
+    color: #121212;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+}
+
+footer > h1 {
+    display: inline-block;
+    margin-right: 2rem;
+    text-align: center;
+    color: #f2f2f2;
+}
+.wrapper {
+    display: flex;
+    text-align: left;
+    display: inline-block;
+    min-width: 650px;
+    list-style-type: none;
+    overflow: hidden;
+    height: 150px;
+    font-size: 0;
+}
+
+.tab{
+    display: inline-block;
+    height: 150px;
+    background-color: #121212;
+    position: relative;
+    overflow: hidden;
+    width: 60px;
+    border-left: 4px #03dac5 solid;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+.tab:hover{
+    width: 350px;
+    border: 0;
+    transition: all 0.5s ease-in-out 0.1s;
+    border-left: 4px #03dac5 solid;
+}
+
+.tab > .content{
+    background-color: #f2f2f2;
+    height: 150px;
+    width: 290px;
+    margin-left: 60px;
+    position: relative;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.tab > .content > h1{
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.tab > .content > p{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: justify;
+}
+.tab:hover > .sm a::before{
+    margin-left: -3.8rem;
+}
+.tab:hover > .sm a::after{
+    margin-left: 0rem;
+}
+.sm a::after, .sm a::before{
+    transition: all 0.5s ease-in-out 0.1s;
+    width: 60px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: normal 2rem "Font Awesome 5 Brands";
+    color: #f2f2f2;
+    position: absolute;
+    cursor: pointer;
+    font-weight: 300;
+}
+.sm a::after{
+    margin-left: 60px;
+    font-size: 3rem;
+}
+.line a::after, .line a::before{
+    content: '\f3c0';
+    
+}
+
+.line a::after{
+    background-color: #00c300;
+}
+
+.instagram a::after, .instagram a::before{
+    content: '\f16d';
+}
+
+.instagram a::after{
+    background-image: linear-gradient(45deg, #515bd4, #8134af, #dd2a7b, #feda77, #f58529);
+}
+.linkedin a::after, .linkedin a::before{
+    content: '\f0e1';
+}
+
+.linkedin a::after{
+    background-color: #0e76a8;
+}
+
+.github a::after, .github a::before{
+    content: '\f09b';
+}
+
+.github a::after{
+    background-color: #333;
+}
+
+.gitlab a::after, .gitlab a::before{
+    content: '\f296';
+}
+
+.gitlab a::after{
+    background-color: #292961;
+}
+@media only screen and (max-width: 900px) {
+    /* Social media */
+    footer > h1 {
+        display: block;
+        margin-bottom: 1rem;
+        text-align: center;
+        margin-left: 2rem;
+    }
+    footer {
+        display: block;
+    }
+    .tab {
+        display: block;
+        width: 100%;
+        border-bottom: 4px #121212 solid;
+        border-left: 4px #f2f2f2 solid;
+    }
+    .sm-wrapper {
+        height: auto;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        border-top: 4px #f2f2f2 solid;
+        box-shadow: 0 0 10px #03dac5;
+        border-bottom: 4px #f2f2f2 solid;
+    }
+    .tab:last-child {
+        border-bottom: none;
+    }
+    .tab > .content {
+        width: 100%;
+        padding-right: 4.5rem;
+    }
+    .tab:hover {
+        width: 100%;
+        border-bottom: 4px #121212 solid;
+        border-left: 4px #f2f2f2 solid;
+    }
+    /* Landing */
+    #right-landing{
+        display: none;
+    }
+    .landing-section{
+        width: 100%;
+        text-align: center;
+    }
+    /* Main */
+    main{
+        padding: 2rem;
+    }
+    .content-item-header{
+        display: block;
+    }
+}
