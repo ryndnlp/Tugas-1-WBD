@@ -99,18 +99,18 @@ const rightButton = document.querySelector('.chevron-right');
 let j = 0;
 leftButton.addEventListener('click', (e) => {
     j--;
-    if(j<0) j+=2;
+    if(j<0) j+=exp.length;
     changeText();
 });
 
 rightButton.addEventListener('click', (e) => {
     j++;
-    if(j>1) j-=2;
+    if(j>1) j-=exp.length;
     changeText();
 });
 
 const changeText = () => {
-    for(let k=0; k<2; k++){
+    for(let k=0; k<exp.length; k++){
         titles[k].innerHTML = exp[j][k].title;
         if(exp[j][k].duration){
             durations[k].innerHTML = exp[j][k].duration;
