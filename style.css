@@ -129,7 +129,7 @@ button .disabled{
 }
 footer {
     color: #121212;
-    padding: 1rem;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
